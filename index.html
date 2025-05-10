@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baia Verde Resort - Official Website</title>
+  <style>
+    /* Remove margens e define fonte padrão */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Para posicionar o botão dentro */
+    }
+
+    /* Botão hamburguer (3 tracinhos) */
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      width: 30px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Cada traço */
+    .menu-toggle span {
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+    }
+
+    /* Menu oculto inicialmente */
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #003366;
+    }
+
+    /* Exibe menu quando ativo */
+    nav.active {
+      display: flex;
+    }
+
+    /* Estilo dos links do menu */
+    nav a {
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #004080;
+    }
+
+    /* Efeito ao passar o mouse */
+    nav a:hover {
+      background-color: #0059b3;
+    }
+
+    /* Centraliza título com espaço para o botão */
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .reservar-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Cor do botão - altere se necessário */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- Cabeçalho com botão e título -->
+<header>
+  <!-- Botão com 3 tracinhos -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <h1>Baia Verde</h1>
+</header>
+
+<!-- Menu que será mostrado ao clicar -->
+<nav id="menu">
+  <a href="#acomodacoes">Quartos</a>
+  <a href="#">Bar/Restaurante</a>
+  <a href="#spa">Spa</a>
+  <a href="#">Atividades</a>
+  <a href="#">Galeria</a>
+  <a href="#">Sobre Nós</a>
+</nav>
+
+<button class="reservar-btn">Reservar</button>
+
+<!-- SEÇÃO DE ACOMODAÇÕES -->
+<section class="acomodacoes" id="acomodacoes">
+  <div class="container">
+    <h2>Nossas Acomodações</h2>
+    <p class="subtitulo">Conheça nossos quartos e escolha o ideal para sua estadia</p>
+    
+    <div class="quartos-grid">
+      <!-- Quarto Twin Vista Mar 1º Andar -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Twin+Vista+Mar+1º" alt="Quarto Twin Vista Mar 1º Andar">
+        <div class="quarto-info">
+          <h3>Quarto Twin Vista Mar 1º Andar</h3>
+          <p><strong>2 camas individuais</strong> com vista privilegiada para o mar.</p>
+          <ul>
+            <li>✔ Vista para o mar</li>
+            <li>✔ Varanda privativa</li>
+            <li>✔ Ar-condicionado</li>
+            <li>✔ Wi-Fi gratuito</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 320</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+      
+      <!-- Quarto Twin Vista Mar 2º Andar -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Twin+Vista+Mar+2º" alt="Quarto Twin Vista Mar 2º Andar">
+        <div class="quarto-info">
+          <h3>Quarto Twin Vista Mar 2º Andar</h3>
+          <p><strong>2 camas individuais</strong> com vista panorâmica.</p>
+          <ul>
+            <li>✔ Vista para o mar</li>
+            <li>✔ Andar superior</li>
+            <li>✔ Frigobar</li>
+            <li>✔ TV a cabo</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 350</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+      
+      <!-- Quarto Duplo Vista Mar 1º Andar -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Duplo+Vista+Mar+1º" alt="Quarto Duplo Vista Mar 1º Andar">
+        <div class="quarto-info">
+          <h3>Quarto Duplo Vista Mar 1º Andar</h3>
+          <p><strong>1 cama de casal</strong> com acesso direto à área da piscina.</p>
+          <ul>
+            <li>✔ Vista para o mar</li>
+            <li>✔ Primeiro andar</li>
+            <li>✔ Amenities premium</li>
+            <li>✔ Secador de cabelo</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 380</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+      
+      <!-- Quarto Duplo Vista Mar 2º Andar -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Duplo+Vista+Mar+2º" alt="Quarto Duplo Vista Mar 2º Andar">
+        <div class="quarto-info">
+          <h3>Quarto Duplo Vista Mar 2º Andar</h3>
+          <p><strong>1 cama de casal</strong> com varanda privativa.</p>
+          <ul>
+            <li>✔ Vista panorâmica</li>
+            <li>✔ Varanda ampla</li>
+            <li>✔ Cafeteira</li>
+            <li>✔ Roupa de cama premium</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 400</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+      
+      <!-- Quarto Individual Vista Mar 1º Andar -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Individual+Vista+Mar+1º" alt="Quarto Individual Vista Mar 1º Andar">
+        <div class="quarto-info">
+          <h3>Quarto Individual Vista Mar 1º Andar</h3>
+          <p><strong>1 cama individual</strong> com vista parcial do mar.</p>
+          <ul>
+            <li>✔ Escritório compacto</li>
+            <li>✔ Primeiro andar</li>
+            <li>✔ Café da manhã incluso</li>
+            <li>✔ Serviço de quarto</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 220</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+      
+      <!-- Quarto Individual -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Quarto+Individual" alt="Quarto Individual">
+        <div class="quarto-info">
+          <h3>Quarto Individual</h3>
+          <p><strong>1 cama individual</strong> para descanso tranquilo.</p>
+          <ul>
+            <li>✔ Vista para o jardim</li>
+            <li>✔ Silêncio garantido</li>
+            <li>✔ Ar-condicionado</li>
+            <li>✔ Mesa de trabalho</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 200</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+      
+      <!-- Quarto Familiar Vista Mar -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Familiar+Vista+Mar" alt="Quarto Familiar Vista Mar">
+        <div class="quarto-info">
+          <h3>Quarto Familiar Vista Mar</h3>
+          <p><strong>1 cama individual + 1 cama de casal</strong> com vista espetacular.</p>
+          <ul>
+            <li>✔ Varanda com rede</li>
+            <li>✔ Vista para o mar</li>
+            <li>✔ Microondas</li>
+            <li>✔ Berço disponível</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 550</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+      
+      <!-- Quarto Familiar -->
+      <div class="quarto">
+        <img src="https://via.placeholder.com/600x400?text=Quarto+Familiar" alt="Quarto Familiar">
+        <div class="quarto-info">
+          <h3>Quarto Familiar</h3>
+          <p><strong>1 cama individual + 1 cama de casal</strong> para toda a família.</p>
+          <ul>
+            <li>✔ Espaço para crianças</li>
+            <li>✔ Vista para o jardim</li>
+            <li>✔ TV a cabo</li>
+            <li>✔ Cama extra disponível</li>
+          </ul>
+          <div class="preco">A partir de <span>R$ 480</span> / noite</div>
+          <button class="btn-reserva">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS (Mantido igual) -->
+<style>
+  .acomodacoes {
+    padding: 50px 0;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .acomodacoes h2 {
+    text-align: center;
+    color: #004080;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .quartos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .quarto {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .quarto:hover {
+    transform: translateY(-10px);
+  }
+  
+  .quarto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .quarto-info {
+    padding: 20px;
+  }
+  
+  .quarto h3 {
+    color: #004080;
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+  
+  .quarto p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .quarto ul {
+    padding-left: 20px;
+    margin: 15px 0;
+  }
+  
+  .quarto ul li {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .preco {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .preco span {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.3rem;
+  }
+  
+  .btn-reserva {
+    width: 100%;
+    padding: 12px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-reserva:hover {
+    background: #003366;
+  }
+  
+  @media (max-width: 768px) {
+    .quartos-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<!-- Script que ativa/desativa o menu -->
+<script>
+  // Seleciona botão e menu
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  // Ao clicar no botão, alterna visibilidade do menu
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+
+
+<!-- Seção de Massoterapia - Igual ao Apollo Tours CV -->
+<section id="spa" class="massagem-section">
+  <div class="container">
+    <h2>Spa</h2>
+    <p class="section-description">
+      Descubra o poder transformador das nossas terapias manuais, projetadas para 
+      aliviar o stress, dores musculares e promover o equilíbrio corporal.
+    </p>
+
+    <div class="massagem-grid">
+      <!-- Massagem Relaxante -->
+      <div class="massagem-card">
+        <div class="massagem-img">
+          <img src="https://via.placeholder.com/600x400?text=Massagem+Relaxante" alt="Massagem Relaxante">
+        </div>
+        <div class="massagem-content">
+          <h3>Massagem Relaxante</h3>
+          <p>
+            Técnicas suaves que aliviam a tensão muscular e promovem 
+            um estado profundo de relaxamento.
+          </p>
+          <ul class="beneficios-list">
+            <li>✔ Redução do stress</li>
+            <li>✔ Melhora da circulação</li>
+            <li>✔ Alívio de tensões</li>
+          </ul>
+          <button class="btn-reserva">Reservar Sessão</button>
+        </div>
+      </div>
+
+      <!-- Massagem Terapêutica -->
+      <div class="massagem-card">
+        <div class="massagem-img">
+          <img src="https://via.placeholder.com/600x400?text=Massagem+Terapêutica" alt="Massagem Terapêutica">
+        </div>
+        <div class="massagem-content">
+          <h3>Massagem Terapêutica</h3>
+          <p>
+            Foco em áreas específicas de desconforto muscular com técnicas 
+            especializadas para reabilitação.
+          </p>
+          <ul class="beneficios-list">
+            <li>✔ Tratamento de lesões</li>
+            <li>✔ Alívio de dores crônicas</li>
+            <li>✔ Recuperação muscular</li>
+          </ul>
+          <button class="btn-reserva">Reservar Sessão</button>
+        </div>
+      </div>
+
+      <!-- Massagem com Pedras Quentes -->
+      <div class="massagem-card">
+        <div class="massagem-img">
+          <img src="https://via.placeholder.com/600x400?text=Pedras+Quentes" alt="Massagem com Pedras Quentes">
+        </div>
+        <div class="massagem-content">
+          <h3>Massagem com Pedras Quentes</h3>
+          <p>
+            Combinação de técnicas manuais com pedras vulcânicas aquecidas 
+            para relaxamento profundo.
+          </p>
+          <ul class="beneficios-list">
+            <li>✔ Relaxamento intenso</li>
+            <li>✔ Melhora da flexibilidade</li>
+            <li>✔ Alívio de tensões profundas</li>
+          </ul>
+          <button class="btn-reserva">Reservar Sessão</button>
+        </div>
+      </div>
+
+      <!-- Aromaterapia -->
+      <div class="massagem-card">
+        <div class="massagem-img">
+          <img src="https://via.placeholder.com/600x400?text=Aromaterapia" alt="Aromaterapia">
+        </div>
+        <div class="massagem-content">
+          <h3>Aromaterapia</h3>
+          <p>
+            Uso de óleos essenciais para potencializar os benefícios da massagem 
+            e equilibrar as emoções.
+          </p>
+          <ul class="beneficios-list">
+            <li>✔ Estímulo dos sentidos</li>
+            <li>✔ Equilíbrio emocional</li>
+            <li>✔ Combate à ansiedade</li>
+          </ul>
+          <button class="btn-reserva">Reservar Sessão</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS Específico para a Seção de Massagens -->
+<style>
+  .massagem-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .massagem-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .massagem-section h2 {
+    text-align: center;
+    color: #004080;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .section-description {
+    text-align: center;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .massagem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .massagem-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .massagem-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .massagem-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .massagem-content {
+    padding: 20px;
+  }
+
+  .massagem-content h3 {
+    color: #004080;
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .massagem-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .beneficios-list {
+    padding-left: 20px;
+    color: #444;
+  }
+
+  .beneficios-list li {
+    margin-bottom: 8px;
+  }
+
+  .btn-reserva {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-reserva:hover {
+    background-color: #c0392b;
+  }
+
+  @media (max-width: 768px) {
+    .massagem-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+
+
+
+
+<!-- 
+  FOOTER STRUCTURE:
+  This footer is organized into 4 main sections (contact, quick links, social media, newsletter)
+  with a copyright bar at the bottom. It uses a clean, responsive design with hotel-appropriate styling.
+-->
+
+<footer class="site-footer">  <!-- Main footer container with dark blue background -->
+  <div class="footer-container">  <!-- Grid container for the footer sections -->
+    
+    <!-- ===== SECTION 1: CONTACT INFO ===== -->
+    <div class="footer-section">
+      <h3>Contato</h3>  <!-- Section title -->
+      <ul>
+        <!-- Contact items with emoji icons (consider using proper icon fonts for production) -->
+        <li><i class="icon">📌</i> Praia do Tarrafal, Cidade do Tarrafal - Ilha de Santiago, Cabo Verde</li>  <!-- Address -->
+        <li><i class="icon">📞</i> (+238) 9 17 71 61</li>  <!-- Phone -->
+        <li><i class="icon">✉️</i> baiaverderesort@gmail.com</li>  <!-- Email -->
+        <li><i class="icon">🕒</i> Recepção 8Am - 9Pm</li>  <!-- Opening hours -->
+      </ul>
+    </div>
+    
+    <!-- ===== SECTION 2: QUICK LINKS ===== -->
+    <div class="footer-section">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <!-- Navigation links - should point to actual page anchors -->
+        <li><a href="#acomodacoes">Quartos</a></li>  <!-- Rooms page -->
+        <li><a href="#spa">Spa</a></li>  <!-- Rooms page -->
+        <li><a href="https://apollotourscv.github.io/ApolloToursCV/">Atividades</a></li>  <!-- Atividades -->
+        <li><a href="#">Promoções</a></li>  <!-- Promotions -->
+        <li><a href="#">Galeria</a></li>  <!-- Gallery -->
+        <li><a href="#">Políticas de Cancelamento</a></li>  <!-- Cancelation policy -->
+        <li><a href="#">FAQ</a></li>  <!-- Frequently asked questions -->
+      </ul>
+    </div>
+    
+    <!-- ===== SECTION 3: SOCIAL MEDIA ===== -->
+    <div class="footer-section">
+      <h3>Siga-nos</h3>
+      <div class="social-icons">
+        <!-- Social links - replace # with actual URLs -->
+        <a href="#"><i class="icon">📱</i> Instagram</a>  <!-- Instagram profile -->
+        <a href="#"><i class="icon">📱</i> Facebook</a>  <!-- Facebook page -->
+        <a href="#"><i class="icon">📱</i> Booking.com</a>  <!-- Facebook page -->
+        <a href="#"><i class="icon">📱</i> Expedia.com</a>  <!-- Facebook page -->
+        <a href="#"><i class="icon">📱</i> TripAdvisor</a>  <!-- TripAdvisor profile -->
+      </div>
+
+    </div>
+    
+    <!-- ===== SECTION 4: NEWSLETTER ===== -->
+    <div class="footer-section">
+      <h3>Receba Ofertas</h3>  <!-- Newsletter title -->
+      <form class="newsletter-form">  <!-- Would need backend integration -->
+        <input type="email" placeholder="Seu e-mail">  <!-- Email input -->
+        <button type="submit">Assinar</button>  <!-- Submit button -->
+      </form>
+      <p>Cadastre-se para receber promoções exclusivas!</p>  <!-- Call to action -->
+    </div>
+  </div>
+  
+  <!-- ===== COPYRIGHT BAR ===== -->
+  <div class="footer-bottom">
+    <p>© 2025 Site programado por Leonardo Nardy - Todos os direitos reservados</p>  <!-- Copyright notice -->
+  </div>
+</footer>
+
+<!-- 
+  FOOTER STYLES:
+  The CSS provides a responsive layout that stacks sections on mobile
+  and uses a 4-column grid on larger screens. Color scheme matches the header.
+-->
+<style>
+  .site-footer {
+    background-color: #004080;  /* Dark blue background */
+    color: white;  /* White text */
+    padding: 40px 0 0;  /* Top padding only */
+    font-family: Arial, sans-serif;  /* Consistent font */
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Responsive columns */
+    gap: 30px;  /* Space between sections */
+    max-width: 1200px;  /* Max content width */
+    margin: 0 auto;  /* Centered */
+    padding: 0 20px;  /* Side padding */
+  }
+  
+  .footer-section h3 {
+    color: #fff;
+    border-bottom: 2px solid #e74c3c;  /* Red underline for headings */
+    padding-bottom: 10px;
+    display: inline-block;  /* Makes border only as wide as text */
+  }
+  
+  .footer-section ul {
+    list-style: none;  /* Removes bullet points */
+    padding: 0;  /* Removes default padding */
+  }
+  
+  .footer-section li, 
+  .footer-section a {
+    color: #ddd;  /* Light gray text */
+    margin-bottom: 8px;  /* Space between items */
+    display: block;  /* Makes each item take full width */
+    text-decoration: none;  /* Removes underline from links */
+    transition: color 0.3s;  /* Smooth hover effect */
+  }
+  
+  .footer-section a:hover {
+    color: #e74c3c;  /* Red color on hover */
+  }
+  
+  .icon {
+    margin-right: 8px;  /* Space between icon and text */
+  }
+  
+  .social-icons a {
+    display: inline-block;  /* Allows side-by-side display */
+    margin-right: 15px;  /* Space between social icons */
+  }
+  
+  .trust-badges img {
+    height: 50px;  /* Fixed height for badges */
+    margin-right: 10px;  /* Space between badges */
+    margin-top: 15px;  /* Space above badges */
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    width: 70%;  /* Input field width */
+    border: none;  /* Removes default border */
+    margin-bottom: 10px;  /* Space below input */
+  }
+  
+  .newsletter-form button {
+    padding: 10px 15px;
+    background-color: #e74c3c;  /* Red button */
+    color: white;
+    border: none;
+    cursor: pointer;  /* Changes cursor to pointer */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;  /* Slightly darker blue */
+    margin-top: 30px;  /* Space above copyright bar */
+    font-size: 0.9rem;  /* Slightly smaller text */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;  /* Stacks sections vertically */
+    }
+  }
+</style>
+
+</body>
+</html>
