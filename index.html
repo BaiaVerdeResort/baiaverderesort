@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baia Verde Resort - Official Website</title>
+  <style>
+    /* Remove margens e define fonte padrão */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative; /* Para posicionar o botão dentro */
+    }
+
+    /* Botão hamburguer (3 tracinhos) */
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: pointer;
+      width: 30px;
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Cada traço */
+    .menu-toggle span {
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+    }
+
+    /* Menu oculto inicialmente */
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #003366;
+    }
+
+    /* Exibe menu quando ativo */
+    nav.active {
+      display: flex;
+    }
+
+    /* Estilo dos links do menu */
+    nav a {
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #004080;
+    }
+
+    /* Efeito ao passar o mouse */
+    nav a:hover {
+      background-color: #0059b3;
+    }
+
+    /* Centraliza título com espaço para o botão */
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .reservar-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Cor do botão - altere se necessário */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- Cabeçalho com botão e título -->
+<header>
+  <!-- Botão com 3 tracinhos -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <h1>Baia Verde Resort</h1>
+</header>
+
+<!-- Menu que será mostrado ao clicar -->
+<nav id="menu">
+  <a href="#acomodacoes">Quartos</a>
+  <a href="#spa">Spa</a>
+  <a href="#">Atividades</a>
+  <a href="#">Galeria</a>
+  <a href="#">Sobre Nós</a>
+</nav>
+
+<button class="reservar-btn">Reservar</button>
+
+<!-- SEÇÃO DE ACOMODAÇÕES -->
+<section class="acomodacoes" id="acomodacoes">
+  <div class="container">
+    <h2>Nossas Acomodações</h2>
+    <p class="subtitulo">Conheça nossos quartos e escolha o ideal para sua estadia</p>
+    
+    <div class="quartos-grid">
+      <div class="quarto">
+        <img src="double.jpg" alt="Quarto Twin Vista Mar 1º Andar">
+        <div class="quarto-info">
+          <h3>Quarto Duplo</h3>
+          <p><strong>1 Cama de Casal</strong></p>
+          <!-- Quarto Twin Vista Mar 1º Andar
+          <ul>
+            <li>Vista para o mar</li>
+            <li>Varanda privativa</li>
+            <li>Wi-Fi gratuito</li>
+          </ul>
+          -->
+          <div class="preco">A partir de <span>5.000$00</span> por noite</div>
+          <!-- Botão "Ver Fotos e Descrição" -->
+<a href="#" class="fotos-descricao-btn">
+  Ver Fotos e Descrição
+</a>
+
+<style>
+  .fotos-descricao-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Verde - pode alterar para outra cor (ex: #2196F3 para azul) */
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:hover {
+    background-color: #45a049; /* Tom escuro do verde */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:active {
+    transform: translateY(0);
+  }
+</style>
+        </div>
+      </div>
+      
+      <!-- Quarto Twin Vista Mar 2º Andar -->
+      <div class="quarto">
+        <img src="single.jpg" alt="Quarto Twin Vista Mar 2º Andar">
+        <div class="quarto-info">
+          <h3>Quarto Individual</h3>
+          <p><strong>2 Camas Individuais</strong></p>
+          <!-- Quarto Twin Vista Mar 1º Andar
+          <ul>
+            <li>Vista para o mar</li>
+            <li>Varanda privativa</li>
+            <li>Wi-Fi gratuito</li>
+          </ul>
+          -->
+          <div class="preco">A partir de <span>5.000$00</span> / noite</div>
+          <a href="#" class="fotos-descricao-btn">
+  Ver Fotos e Descrição
+</a>
+
+<style>
+  .fotos-descricao-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Verde - pode alterar para outra cor (ex: #2196F3 para azul) */
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-left: 70px;
+  }
+  
+  .fotos-descricao-btn:hover {
+    background-color: #45a049; /* Tom escuro do verde */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:active {
+    transform: translateY(0);
+  }
+</style>
+        </div>
+      </div>
+      
+      <!-- Quarto Duplo Vista Mar 2º Andar -->
+      <div class="quarto">
+        <img src="familiar.jpg" alt="Quarto Duplo Vista Mar 2º Andar">
+        <div class="quarto-info">
+          <h3>Quarto com 1 Cama de Solteiro + 1 Cama de Casal e WC Partilhado</h3>
+          <p><strong>1 Cama de Solteiro + 1 Cama de Casal</strong></p>
+          <!-- Quarto Twin Vista Mar 1º Andar
+          <ul>
+            <li>Vista para o mar</li>
+            <li>Varanda privativa</li>
+            <li>Wi-Fi gratuito</li>
+          </ul>
+          -->
+          <div class="preco">A partir de <span>10.000$00</span> / noite</div>
+          <a href="#" class="fotos-descricao-btn">
+  Ver Fotos e Descrição
+</a>
+
+<style>
+  .fotos-descricao-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Verde - pode alterar para outra cor (ex: #2196F3 para azul) */
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:hover {
+    background-color: #45a049; /* Tom escuro do verde */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:active {
+    transform: translateY(0);
+  }
+</style>
+        </div>
+      </div>
+      
+      <!-- Quarto Individual Vista Mar 1º Andar -->
+      <div class="quarto">
+        <img src="single.jpg" alt="Quarto Individual Vista Mar 1º Andar">
+        <div class="quarto-info">
+          <h3>Quarto com 2 Camas Separadas</h3>
+          <p><strong>1 cama individual</strong></p>
+          <!-- Quarto Twin Vista Mar 1º Andar
+          <ul>
+            <li>Vista para o mar</li>
+            <li>Varanda privativa</li>
+            <li>Wi-Fi gratuito</li>
+          </ul>
+          -->
+          <div class="preco">A partir de <span>5.000$00</span> / noite</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   Ver Fotos e Descrição -->
+<a href="#" class="fotos-descricao-btn">
+  Ver Fotos e Descrição
+</a>
+<!-- Adicione este código antes do </body> -->
+
+<!-- Modal do Slideshow -->
+<div id="slideshowModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="slideshow-container">
+    <!-- Slides das imagens -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="quarto-duplo-1.jpg" style="width:100%">
+      <div class="text">Quarto Duplo - Vista Geral</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="quarto-duplo-2.jpg" style="width:100%">
+      <div class="text">Quarto Duplo - Área de Descanso</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="quarto-duplo-3.jpg" style="width:100%">
+      <div class="text">Quarto Duplo - Casa de Banho</div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+  
+  <!-- Descrição do quarto -->
+  <div class="quarto-descricao">
+    <h3>Quarto Duplo</h3>
+    <p>Nosso quarto duplo premium oferece:</p>
+    <ul>
+      <li>Cama de casal king-size</li>
+      <li>Vista para o mar</li>
+      <li>Ar condicionado</li>
+      <li>Wi-Fi gratuito</li>
+      <li>TV de tela plana</li>
+    </ul>
+    <p>Área total: 32m²</p>
+  </div>
+</div>
+
+<style>
+/* Estilos do Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  overflow: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* Imagens */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+.mySlides img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* Número do slide (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Descrição da imagem */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Botões de navegação */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Descrição do quarto */
+.quarto-descricao {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.quarto-descricao h3 {
+  color: #004080;
+  margin-top: 0;
+}
+
+.quarto-descricao ul {
+  padding-left: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
+/* Animação de fade */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+
+<script>
+// JavaScript para o slideshow
+let slideIndex = 1;
+
+// Abrir modal quando clicar no botão "Ver Fotos e Descrição" do quarto duplo
+document.querySelector('.quarto:first-child .fotos-descricao-btn').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('slideshowModal').style.display = 'block';
+  showSlides(slideIndex);
+  document.body.style.overflow = 'hidden';
+});
+
+// Fechar modal
+document.querySelector('.close').addEventListener('click', function() {
+  document.getElementById('slideshowModal').style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
+// Navegação entre slides
+document.querySelector('.prev').addEventListener('click', function() {
+  plusSlides(-1);
+});
+
+document.querySelector('.next').addEventListener('click', function() {
+  plusSlides(1);
+});
+
+// Funções do slideshow
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+}
+
+// Fechar modal ao clicar fora
+window.addEventListener('click', function(event) {
+  if (event.target == document.getElementById('slideshowModal')) {
+    document.getElementById('slideshowModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .fotos-descricao-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Verde - pode alterar para outra cor (ex: #2196F3 para azul) */
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:hover {
+    background-color: #45a049; /* Tom escuro do verde */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:active {
+    transform: translateY(0);
+  }
+</style>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS (Mantido igual) -->
+<style>
+  .acomodacoes {
+    padding: 50px 0;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .acomodacoes h2 {
+    text-align: center;
+    color: #004080;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .quartos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .quarto {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .quarto:hover {
+    transform: translateY(-10px);
+  }
+  
+  .quarto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .quarto-info {
+    padding: 20px;
+  }
+  
+  .quarto h3 {
+    color: #004080;
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+  
+  .quarto p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .quarto ul {
+    padding-left: 20px;
+    margin: 15px 0;
+  }
+  
+  .quarto ul li {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .preco {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .preco span {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.3rem;
+  }
+  
+  .btn-reserva {
+    width: 100%;
+    padding: 12px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-reserva:hover {
+    background: #003366;
+  }
+  
+  @media (max-width: 768px) {
+    .quartos-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<!-- Script que ativa/desativa o menu -->
+<script>
+  // Seleciona botão e menu
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  // Ao clicar no botão, alterna visibilidade do menu
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+
+
+<!-- Seção de Massoterapia - Igual ao Apollo Tours CV -->
+<section id="spa" class="massagem-section">
+  <div class="container">
+    <h2>Spa</h2>
+    <p class="section-description">
+      Descubra o poder transformador das nossas terapias manuais, projetadas para 
+      aliviar o stress, dores musculares e promover o equilíbrio corporal.
+    </p>
+
+    <div class="massagem-grid">
+      <!-- Massagem Relaxante -->
+      <div class="massagem-card">
+        <div class="massagem-img">
+          <img src="massage00.jpg" alt="Massagem Relaxante">
+        </div>
+        <div class="massagem-content">
+          <h3>Massagem Relaxante</h3>
+          <p>
+            Técnicas suaves que aliviam a tensão muscular e promovem 
+            um estado profundo de relaxamento.
+          </p>
+          <ul class="beneficios-list">
+            <li>Redução do stress</li>
+            <li>Melhora da circulação</li>
+            <li>Alívio de tensões</li>
+          </ul>
+          <a href="#" class="fotos-descricao-btn">
+  Ver Fotos e Descrição
+</a>
+
+<style>
+  .fotos-descricao-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Verde - pode alterar para outra cor (ex: #2196F3 para azul) */
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:hover {
+    background-color: #45a049; /* Tom escuro do verde */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:active {
+    transform: translateY(0);
+  }
+</style>
+          <button class="btn-reserva">Reservar Sessão</button>
+        </div>
+      </div>
+
+      <!-- Massagem Terapêutica -->
+      <div class="massagem-card">
+        <div class="massagem-img">
+          <img src="massage01.jpg" alt="Massagem Terapêutica">
+        </div>
+        <div class="massagem-content">
+          <h3>Massagem Terapêutica</h3>
+          <p>
+            Foco em áreas específicas de desconforto muscular com técnicas 
+            especializadas para reabilitação.
+          </p>
+          <ul class="beneficios-list">
+            <li>Tratamento de lesões</li>
+            <li>Alívio de dores crônicas</li>
+            <li>Recuperação muscular</li>
+          </ul>
+          <a href="#" class="fotos-descricao-btn">
+  Ver Fotos e Descrição
+</a>
+
+<style>
+  .fotos-descricao-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Verde - pode alterar para outra cor (ex: #2196F3 para azul) */
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:hover {
+    background-color: #45a049; /* Tom escuro do verde */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:active {
+    transform: translateY(0);
+  }
+</style>
+          <button class="btn-reserva">Reservar Sessão</button>
+        </div>
+      </div>
+
+      <!-- Massagem com Pedras Quentes -->
+      <div class="massagem-card">
+        <div class="massagem-img">
+          <img src="massage02.jpg" alt="Massagem com Pedras Quentes">
+        </div>
+        <div class="massagem-content">
+          <h3>Massagem com Pedras Quentes</h3>
+          <p>
+            Combinação de técnicas manuais com pedras vulcânicas aquecidas 
+            para relaxamento profundo.
+          </p>
+          <ul class="beneficios-list">
+            <li>Relaxamento intenso</li>
+            <li>Melhora da flexibilidade</li>
+            <li>Alívio de tensões profundas</li>
+          </ul>
+          <a href="#" class="fotos-descricao-btn">
+  Ver Fotos e Descrição
+</a>
+
+<style>
+  .fotos-descricao-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Verde - pode alterar para outra cor (ex: #2196F3 para azul) */
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:hover {
+    background-color: #45a049; /* Tom escuro do verde */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .fotos-descricao-btn:active {
+    transform: translateY(0);
+  }
+</style>
+          <button class="btn-reserva">Reservar Sessão</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS Específico para a Seção de Massagens -->
+<style>
+  .massagem-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .massagem-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .massagem-section h2 {
+    text-align: center;
+    color: #004080;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .section-description {
+    text-align: center;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .massagem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .massagem-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .massagem-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .massagem-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .massagem-content {
+    padding: 20px;
+  }
+
+  .massagem-content h3 {
+    color: #004080;
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .massagem-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .beneficios-list {
+    padding-left: 20px;
+    color: #444;
+  }
+
+  .beneficios-list li {
+    margin-bottom: 8px;
+  }
+
+  .btn-reserva {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-reserva:hover {
+    background-color: #c0392b;
+  }
+
+  @media (max-width: 768px) {
+    .massagem-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+
+
+
+
+<!-- 
+  FOOTER STRUCTURE:
+  This footer is organized into 4 main sections (contact, quick links, social media, newsletter)
+  with a copyright bar at the bottom. It uses a clean, responsive design with hotel-appropriate styling.
+-->
+
+<footer class="site-footer">  <!-- Main footer container with dark blue background -->
+  <div class="footer-container">  <!-- Grid container for the footer sections -->
+    
+    <!-- ===== SECTION 1: CONTACT INFO ===== -->
+    <div class="footer-section">
+      <h3>Contato</h3>  <!-- Section title -->
+      <ul>
+        <!-- Contact items with emoji icons (consider using proper icon fonts for production) -->
+        <li><i class="icon">📌</i> Praia do Tarrafal, Cidade do Tarrafal - Ilha de Santiago, Cabo Verde</li>  <!-- Address -->
+        <li><i class="icon">📞</i> (+238) 9 17 71 61</li>  <!-- Phone -->
+        <li><i class="icon">✉️</i> baiaverderesort@gmail.com</li>  <!-- Email -->
+        <li><i class="icon">🕒</i> Recepção 8Am - 9Pm</li>  <!-- Opening hours -->
+      </ul>
+    </div>
+    
+    <!-- ===== SECTION 2: QUICK LINKS ===== -->
+    <div class="footer-section">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <!-- Navigation links - should point to actual page anchors -->
+        <li><a href="#acomodacoes">Quartos</a></li>  <!-- Rooms page -->
+        <li><a href="#spa">Spa</a></li>  <!-- Rooms page -->
+        <li><a href="https://apollotourscv.github.io/ApolloToursCV/">Atividades</a></li>  <!-- Atividades -->
+        <li><a href="#">Galeria</a></li>  <!-- Gallery -->
+      </ul>
+    </div>
+    
+    <!-- ===== SECTION 3: SOCIAL MEDIA ===== -->
+    <div class="footer-section">
+      <h3>Siga-nos</h3>
+      <div class="social-icons">
+        <!-- Social links - replace # with actual URLs -->
+        <a href="#"><i class="icon">📱</i> Instagram</a>  <!-- Instagram profile -->
+        <a href="#"><i class="icon">📱</i> Facebook</a>  <!-- Facebook page -->
+      </div>
+
+    </div>
+    
+    <!-- ===== SECTION 4: NEWSLETTER ===== -->
+    <div class="footer-section">
+      <h3>Receba Ofertas</h3>  <!-- Newsletter title -->
+      <form class="newsletter-form">  <!-- Would need backend integration -->
+        <input type="email" placeholder="Seu e-mail">  <!-- Email input -->
+        <button type="submit">Assinar</button>  <!-- Submit button -->
+      </form>
+      <p>Cadastre-se para receber promoções exclusivas!</p>  <!-- Call to action -->
+    </div>
+  </div>
+  
+  <!-- ===== COPYRIGHT BAR ===== -->
+  <div class="footer-bottom">
+    <p>© 2025 Site programado por Leonardo Nardy - Todos os direitos reservados</p>  <!-- Copyright notice -->
+  </div>
+</footer>
+
+<!-- 
+  FOOTER STYLES:
+  The CSS provides a responsive layout that stacks sections on mobile
+  and uses a 4-column grid on larger screens. Color scheme matches the header.
+-->
+<style>
+  .site-footer {
+    background-color: #004080;  /* Dark blue background */
+    color: white;  /* White text */
+    padding: 40px 0 0;  /* Top padding only */
+    font-family: Arial, sans-serif;  /* Consistent font */
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Responsive columns */
+    gap: 30px;  /* Space between sections */
+    max-width: 1200px;  /* Max content width */
+    margin: 0 auto;  /* Centered */
+    padding: 0 20px;  /* Side padding */
+  }
+  
+  .footer-section h3 {
+    color: #fff;
+    border-bottom: 2px solid #e74c3c;  /* Red underline for headings */
+    padding-bottom: 10px;
+    display: inline-block;  /* Makes border only as wide as text */
+  }
+  
+  .footer-section ul {
+    list-style: none;  /* Removes bullet points */
+    padding: 0;  /* Removes default padding */
+  }
+  
+  .footer-section li, 
+  .footer-section a {
+    color: #ddd;  /* Light gray text */
+    margin-bottom: 8px;  /* Space between items */
+    display: block;  /* Makes each item take full width */
+    text-decoration: none;  /* Removes underline from links */
+    transition: color 0.3s;  /* Smooth hover effect */
+  }
+  
+  .footer-section a:hover {
+    color: #e74c3c;  /* Red color on hover */
+  }
+  
+  .icon {
+    margin-right: 8px;  /* Space between icon and text */
+  }
+  
+  .social-icons a {
+    display: inline-block;  /* Allows side-by-side display */
+    margin-right: 15px;  /* Space between social icons */
+  }
+  
+  .trust-badges img {
+    height: 50px;  /* Fixed height for badges */
+    margin-right: 10px;  /* Space between badges */
+    margin-top: 15px;  /* Space above badges */
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    width: 70%;  /* Input field width */
+    border: none;  /* Removes default border */
+    margin-bottom: 10px;  /* Space below input */
+  }
+  
+  .newsletter-form button {
+    padding: 10px 15px;
+    background-color: #e74c3c;  /* Red button */
+    color: white;
+    border: none;
+    cursor: pointer;  /* Changes cursor to pointer */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;  /* Slightly darker blue */
+    margin-top: 30px;  /* Space above copyright bar */
+    font-size: 0.9rem;  /* Slightly smaller text */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;  /* Stacks sections vertically */
+    }
+  }
+</style>
+
+</body>
+</html>
